@@ -44,5 +44,11 @@ run node index.js, see if the app keeps track of your burgers
 If you have Questions you can check out:
 <br>
 <a href="https://www.github.com/wuzzlefump">https://www.github.com/wuzzlefump</a><br>
+<a href="https://github.com/wuzzlefump/Burger">https://github.com/wuzzlefump/Burger<a>
+<br>
 or email:
 paulelliottwork@gmail.com
+<br>
+or profile:
+<a href="https://wuzzlefump.github.io/paul-portfolio/">https://wuzzlefump.github.io/paul-portfolio/<a>
+
