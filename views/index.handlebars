@@ -1,16 +1,77 @@
-<h1>Burgers!</h1>
+<nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: tan;">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+<img src="https://img.icons8.com/cotton/64/000000/beefburger.png"/>
+    </a>
+</div>
+</nav>
 
-<h2>Burgers are delicious!</h2>
+<div class="card" style = "margin-top: 1%; margin-left: 5%; margin-right: 5%; margin-bottom 2%; background-color:tan; display:flex; flex-direction:column; align-items:center;">
 
-<ul>
+  
+
+  <div class="card-content">
+    <div class="content">
+   
+
+<h2>Burgers are delicious! Get One and eat one!</h2>
+<h2>Add a burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="slee">Have you eaten it, or are you going to?</label><br>
+    <input type="radio" name="eaten" value="1" > eaten<br>
+    <input type="radio" name="eaten" value="0"checked>  new burger
+  </div>
+
+  <button type="submit"> add a burger</button>
+</form>
+
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+  </footer>
+</div>
+
+<div class="columns">
+
+  <div class="column">
+  
+      <div class="card" style="margin-top: 1%; margin-left:2%; background-color: tan; display:flex; flex-direction:column; align-items:center;">
+  <div class="card-content">
+    <p class="title">
+  Burgers To Eat
+    </p> 
+   <ul>
   {{#each burgers}}
     {{#unless eaten}}
-      {{> burgers/burger-block sleep=true}}
+      {{> burgers/burger-block eaten=false}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>You have eaten these burgers!</h2>
+<img src="https://img.icons8.com/fluent/96/000000/hamburger.png"/>
+  </div>
+
+</div>
+
+  </div>
+
+
+  <div class="column">
+
+
+<div class="card" style="margin-top: 1%; margin-right:2%; background-color:tan; display:flex; flex-direction:column; align-items:center;" >
+  <div class="card-content">
+    <p class="title">
+      Burgers Eaten
+    </p>
 
 <ul>
   {{#each burgers}}
@@ -19,20 +80,34 @@
     {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add a burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">burger Name:</label>
-    <input type="text" id="ca" name="name">
+<img src="https://img.icons8.com/bubbles/100/000000/meal.png"/>
   </div>
+  
+</div>
 
-  <div class="form-group">
-    <label for="slee">Hungry?</label><br>
-    <input type="radio" name="eaten" value="1" checked> eaten<br>
-    <input type="radio" name="eaten" value="0">  new burger
+
+ </div>
+
+
+
+
+
+
+</div>
+
+<footer class="footer" style="background-color: chocolate;">
+  <div class="content has-text-centered">
+    <h3>Technologies used:</h1>
+    <p>Bulma</p>
+    <br>
+    <p>Express</p>
+    <br>
+    <p>MySQL</p>
+    <br>
+    <p>Express Handlebars</p>
+    <br>
+    <p>Icons 8</p>
+    <br>
+    <br>
   </div>
-
-  <button type="submit"> add a burger</button>
-</form>
+</footer>
